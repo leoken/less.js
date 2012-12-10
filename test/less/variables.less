@@ -38,3 +38,17 @@
     url: url(@a);
     multi: something @multi, @a;
 }
+
+.variable-names {
+    @var: 'hello';
+    @name: 'var';
+    name: @@name;
+}
+.alpha {
+    @var: 42;
+    filter: alpha(opacity=@var);
+}
+
+a:nth-child(@a) {
+    border: 1px;
+}

@@ -2,8 +2,10 @@
   js: 42;
   js: 2;
   js: "hello world";
-  sigkill: 9;
+  js: 1, 2, 3;
+  title: "string";
   ternary: true;
+  multiline: 2;
 }
 .scope {
   var: 42;
@@ -11,4 +13,11 @@
 }
 .vars {
   width: 8;
+}
+.escape-interpol {
+  width: hello world;
+}
+.arrays {
+  ary: "1, 2, 3";
+  ary1: "1, 2, 3";
 }
