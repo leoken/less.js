@@ -36,6 +36,10 @@
   padding: -1px 2px 0 -4px; //
 }
 
+.rem-dimensions {
+  font-size: 20rem / 5 + 1.5rem; // 5.5rem
+}
+
 .colors {
   color: #123; // #112233
   border-color: #234 + #111111; // #334455
@@ -44,4 +48,15 @@
     color: 2 * #111; // #222222
     border-color: #333333 / 3 + #111; // #222222
   }
+}
+
+.negations {
+    @var: 4px;
+    variable: -@var; // 4
+    variable1: -@var + @var; // 0
+    variable2: @var + -@var; // 0
+    variable3: @var - -@var; // 8
+    variable4: -@var - -@var; // 0
+    paren: -(@var); // -4px
+    paren2: -(2 + 2) * -@var; // 16
 }
